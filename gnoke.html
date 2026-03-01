@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gnoke Suite — Edmund Sparrow</title>
+  <meta name="description" content="The Gnoke Suite — offline-first PWAs built for Nigeria. Transport, library, gas station, diagnostics and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="background.js" defer></script>
+  <style>
+    /* ── Skeleton loader ── */
+    .skeleton {
+      background: linear-gradient(90deg, var(--bg-raised) 25%, var(--bg-card) 50%, var(--bg-raised) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+      border-radius: 8px;
+    }
+    @keyframes shimmer {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    .skeleton-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .sk-icon  { width: 48px; height: 48px; border-radius: 12px; }
+    .sk-title { width: 60%; height: 18px; margin-top: .2rem; }
+    .sk-line  { width: 100%; height: 13px; }
+    .sk-line2 { width: 75%; height: 13px; }
+    .sk-tags  { display: flex; gap: .4rem; }
+    .sk-tag   { width: 56px; height: 24px; border-radius: 20px; }
+
+    /* ── App action buttons ── */
+    .app-actions {
+      display: flex;
+      gap: .6rem;
+      flex-wrap: wrap;
+      margin-top: auto;
+    }
+    .app-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .78rem;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: 7px;
+      letter-spacing: .03em;
+      transition: all .22s var(--ease);
+      border: 1px solid transparent;
+    }
+    .app-btn-primary {
+      background: var(--teal);
+      color: #fff;
+      border-color: var(--teal);
+    }
+    .app-btn-primary:hover {
+      background: transparent;
+      color: var(--teal);
+    }
+    .app-btn-ghost {
+      background: transparent;
+      color: var(--t-65);
+      border-color: var(--border-md);
+    }
+    .app-btn-ghost:hover {
+      border-color: var(--teal);
+      color: var(--teal);
+    }
+
+    /* ── Error / empty state ── */
+    .api-notice {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 3rem;
+      color: var(--t-65);
+    }
+    .api-notice i {
+      font-size: 2rem;
+      color: var(--t-20);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .api-notice a { color: var(--teal); text-decoration: underline; }
+
+    /* ── Repo count badge ── */
+    .repo-count {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: var(--teal-dim);
+      border: 1px solid rgba(0,169,140,.2);
+      color: var(--teal);
+      margin-left: .6rem;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     HEADER
+══════════════════════════════════ -->
+<header>
+  <nav class="container">
+    <a href="index.html" class="nav-brand">
+      <div class="gnoke-mark">G</div>
+      <span class="nav-name">Edmund <span>Sparrow</span></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="gnoke.html" class="active">Gnoke Suite</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="stack.html">Stack</a></li>
+      <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- ══════════════════════════════════
+     PAGE HERO
+══════════════════════════════════ -->
+<div class="page-hero">
+  <div class="container">
+    <h1>The <span>Gnoke</span> Suite</h1>
+    <p>Our Product Suite</p>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     APPS
+══════════════════════════════════ -->
+<section class="gnoke-suite">
+  <div class="container">
+
+    <div class="suite-intro">
+      <div class="gnoke-logo-lg">G</div>
+      <div class="suite-intro-text">
+        <h2>The Gnoke Suite <span id="repo-count-badge"></span></h2>
+        <p>Offline-first tools. Zero dependency. Built for Nigeria.</p>
+      </div>
+    </div>
+
+    <!-- Cards injected by JS; skeletons shown while loading -->
+    <div class="apps-grid" id="apps-grid">
+      <div class="skeleton-card">
+        <div class="skeleton sk-icon"></div>
+        <div class="skeleton sk-title"></div>
+        <div class="skeleton sk-line"></div>
+        <div class="skeleton sk-line2"></div>
+        <div class="sk-tags"><div class="skeleton sk-tag"></div><div class="skeleton sk-tag"></div></div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton sk-icon"></div>
+        <div class="skeleton sk-title"></div>
+        <div class="skeleton sk-line"></div>
+        <div class="skeleton sk-line2"></div>
+        <div class="sk-tags"><div class="skeleton sk-tag"></div><div class="skeleton sk-tag"></div></div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton sk-icon"></div>
+        <div class="skeleton sk-title"></div>
+        <div class="skeleton sk-line"></div>
+        <div class="skeleton sk-line2"></div>
+        <div class="sk-tags"><div class="skeleton sk-tag"></div><div class="skeleton sk-tag"></div></div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-box" style="margin-top:3rem;">
+      <p class="sec-label">Want Something Custom?</p>
+      <h3>Need a Bespoke Version?</h3>
+      <p>Any Gnoke app can be customised for your business — branded, extended, and delivered just for you.</p>
+      <a href="contact.html" class="btn btn-teal">
+        <i class="fas fa-comments"></i> Let's Talk
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <div class="gnoke-mark">G</div>
+        Edmund Sparrow · Gnoke
+      </div>
+      <p>© 2025 Edmund Sparrow. All rights reserved.</p>
+      <div class="foot-links">
+        <a href="https://github.com/edmundsparrow" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/2349024054758" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  /* ── Nav toggle ── */
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', e => {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    }
+  });
+
+  /* ── Visual variety palettes ── */
+  const EMOJI = ['🛠️','📱','⚡','📊','📖','🧾','🚐','⛽','🔌','🖥️','🚚','📡','💾','🌐','🔧','🗄️'];
+  const COLORS = [
+    ['rgba(0,169,140,.10)',  'rgba(0,169,140,.18)'],
+    ['rgba(245,158,11,.08)','rgba(245,158,11,.18)'],
+    ['rgba(139,92,246,.08)','rgba(139,92,246,.18)'],
+    ['rgba(59,130,246,.08)','rgba(59,130,246,.18)'],
+    ['rgba(16,185,129,.08)','rgba(16,185,129,.18)'],
+    ['rgba(239,68,68,.08)', 'rgba(239,68,68,.18)'],
+    ['rgba(217,119,6,.08)', 'rgba(217,119,6,.18)'],
+    ['rgba(20,184,166,.08)','rgba(20,184,166,.18)'],
+  ];
+
+  /* ── Convert repo name to readable title ── */
+  function repoToTitle(name) {
+    return name
+      .replace(/[-_]/g, ' ')
+      .replace(/\b\w/g, c => c.toUpperCase());
+  }
+
+  /* ── Build one card's HTML ── */
+  function buildCard(repo, index) {
+    const [bg, border] = COLORS[index % COLORS.length];
+    const emoji  = EMOJI[index % EMOJI.length];
+    const title  = repoToTitle(repo.name);
+    const desc   = repo.description && repo.description.trim()
+                     ? repo.description.trim()
+                     : 'An offline-first Gnoke application.';
+
+    const topics  = (repo.topics || []).filter(t => t !== 'gnoke').slice(0, 3);
+    const tagHtml = topics.length
+      ? topics.map(t => `<span class="tag">${t.charAt(0).toUpperCase() + t.slice(1)}</span>`).join('')
+      : '<span class="tag">PWA</span><span class="tag">Offline</span>';
+
+    const liveUrl   = repo.homepage && repo.homepage.trim() !== '' ? repo.homepage.trim() : null;
+    const githubUrl = repo.html_url;
+
+    const liveBtn = liveUrl
+      ? `<a href="${liveUrl}" target="_blank" rel="noopener" class="app-btn app-btn-primary">
+           <i class="fas fa-external-link-alt"></i> Open App
+         </a>`
+      : '';
+
+    const ghBtn = `<a href="${githubUrl}" target="_blank" rel="noopener" class="app-btn app-btn-ghost">
+        <i class="fab fa-github"></i> GitHub
+      </a>`;
+
+    return `
+      <div class="app-card">
+        <div class="app-header">
+          <div class="app-icon" style="background:${bg};border:1px solid ${border};">${emoji}</div>
+          <span class="app-status status-live">Live</span>
+        </div>
+        <div>
+          <h3>${title}</h3>
+          <p>${desc}</p>
+        </div>
+        <div class="app-tags">${tagHtml}</div>
+        <div class="app-actions">
+          ${liveBtn}
+          ${ghBtn}
+        </div>
+      </div>`;
+  }
+
+  /* ── Fetch repos & render ── */
+  async function loadRepos() {
+    const grid  = document.getElementById('apps-grid');
+    const badge = document.getElementById('repo-count-badge');
+
+    try {
+      const res = await fetch(
+        'https://api.github.com/users/edmundsparrow/repos?per_page=100&sort=pushed',
+        { headers: { 'Accept': 'application/vnd.github+json' } }
+      );
+
+      if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+
+      const repos = await res.json();
+      const gnoke = repos.filter(r => r.name.toLowerCase().startsWith('gnoke'));
+
+      if (gnoke.length === 0) {
+        grid.innerHTML = `
+          <div class="api-notice">
+            <i class="fas fa-box-open"></i>
+            <p>No Gnoke repos found yet. Create a repo with a <strong>gnoke-</strong> prefix on GitHub and it'll appear here automatically.</p>
+          </div>`;
+        return;
+      }
+
+      grid.innerHTML = gnoke.map((repo, i) => buildCard(repo, i)).join('');
+      badge.innerHTML = `<span class="repo-count">${gnoke.length}</span>`;
+
+    } catch (err) {
+      console.error('GitHub fetch failed:', err);
+      grid.innerHTML = `
+        <div class="api-notice">
+          <i class="fas fa-wifi"></i>
+          <p>Couldn't load apps right now. Check your connection or <a href="https://github.com/edmundsparrow" target="_blank">browse them on GitHub</a> directly.</p>
+        </div>`;
+    }
+  }
+
+  loadRepos();
+</script>
+</body>
+</html>

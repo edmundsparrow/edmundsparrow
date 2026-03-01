@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Edmund Sparrow</title>
+  <meta name="description" content="Custom web application development — school results, library management, receipt systems, courier dispatch and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="background.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="index.html" class="nav-brand">
+      <div class="gnoke-mark">G</div>
+      <span class="nav-name">Edmund <span>Sparrow</span></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="gnoke.html">Gnoke Suite</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="stack.html">Stack</a></li>
+      <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1>Our <span>Services</span></h1>
+    <p>What We Do</p>
+  </div>
+</div>
+
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="container">
+
+    <div class="svcs-grid">
+
+      <div class="svc-card">
+        <div class="svc-icon">📊</div>
+        <h3>School Results Management</h3>
+        <p>Automated result computation and printable report sheets for schools.</p>
+        <ul>
+          <li>Automated result computation</li>
+          <li>Student performance tracking</li>
+          <li>Printable report sheets</li>
+          <li>Admin dashboard</li>
+        </ul>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">📖</div>
+        <h3>Library Management System</h3>
+        <p>Full book inventory and borrow/return tracking for any institution.</p>
+        <ul>
+          <li>Book inventory tracking</li>
+          <li>Borrow &amp; return system</li>
+          <li>User/member database</li>
+          <li>Overdue notifications</li>
+        </ul>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🧾</div>
+        <h3>Digital Receipt &amp; Sales Manager</h3>
+        <p>Instant receipt generation and daily sales tracking for retail businesses.</p>
+        <ul>
+          <li>Instant receipt generation</li>
+          <li>Daily sales tracking</li>
+          <li>CSV export</li>
+          <li>Business customization</li>
+        </ul>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🚚</div>
+        <h3>Courier / Dispatch Management</h3>
+        <p>Package tracking, delivery status, and customer database for logistics.</p>
+        <ul>
+          <li>Package tracking</li>
+          <li>Delivery status updates</li>
+          <li>Customer database</li>
+          <li>Reporting dashboard</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="cta-box">
+      <p class="sec-label">Enterprise Solutions</p>
+      <h3>Have a Different Idea?</h3>
+      <p>I build bespoke systems for any industry. Mobile-ready, offline-capable, no ads, no recurring fees.</p>
+      <a href="contact.html" class="btn btn-teal">
+        <i class="fas fa-comments"></i> Let's Talk
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <div class="gnoke-mark">G</div>
+        Edmund Sparrow · Gnoke
+      </div>
+      <p>© 2025 Edmund Sparrow. All rights reserved.</p>
+      <div class="foot-links">
+        <a href="https://github.com/edmundsparrow" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/2349024054758" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', e => {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    }
+  });
+</script>
+</body>
+</html>

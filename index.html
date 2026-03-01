@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edmund Sparrow — Gnoke Developer</title>
+  <meta name="description" content="Edmund Sparrow builds offline-first PWAs and custom web applications for businesses. Creator of the Gnoke suite of tools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     HEADER
+══════════════════════════════════ -->
+<header>
+  <nav class="container">
+    <a href="index.html" class="nav-brand">
+      <div class="gnoke-mark">G</div>
+      <span class="nav-name">Edmund <span>Sparrow</span></span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="gnoke.html">Gnoke Suite</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="stack.html">Stack</a></li>
+      <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- ══════════════════════════════════
+     HERO
+══════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-blob2" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+
+      <div class="hero-badge">
+        <i class="fas fa-circle-dot"></i>
+        Available for custom projects
+      </div>
+
+      <h1>
+        <span class="name-line">Edmund Sparrow</span>
+        Building Apps That<br>Work <span class="accent">Anywhere.</span>
+      </h1>
+
+      <p class="hero-sub">
+        I build <strong>offline-first PWAs</strong> and custom web applications for
+        businesses — from transport and logistics to schools, libraries, and retail.
+        Creator of the <strong>Gnoke</strong> suite of tools.
+      </p>
+
+      <div class="hero-cta">
+        <a href="gnoke.html" class="btn btn-teal">
+          <i class="fas fa-th-large"></i> Explore Gnoke Suite
+        </a>
+        <a href="contact.html" class="btn btn-ghost">
+          <i class="fas fa-paper-plane"></i> Start a Project
+        </a>
+      </div>
+
+      <div class="avail-pill">
+        <div class="avail-dot"></div>
+        Port Harcourt, Nigeria · Remote Worldwide
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══════════════════════════════════
+     PREVIEW STRIPS
+══════════════════════════════════ -->
+<section style="padding: 4rem 0; background: var(--bg-card);">
+  <div class="container">
+    <p class="sec-label">What I Do</p>
+    <h2 class="sec-title">Everything Under One Roof</h2>
+    <p class="sec-sub">From ready-made offline tools to fully bespoke enterprise systems — built fast, built to last.</p>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 1.2rem;">
+
+      <a href="gnoke.html" style="display:block; padding:2rem 1.6rem; background:var(--bg); border:1px solid var(--border); border-radius:var(--r-lg); transition: border-color .25s, transform .25s, box-shadow .25s;" onmouseover="this.style.borderColor='rgba(0,169,140,.28)';this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,.07)'" onmouseout="this.style.borderColor='';this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:1.8rem; margin-bottom:.9rem;">🛠️</div>
+        <h3 style="font-family:var(--f-head);font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;letter-spacing:-.01em;">Gnoke Suite</h3>
+        <p style="font-size:.87rem;color:var(--t-65);line-height:1.65;">6 live offline-first PWAs covering transport, library, gas station, diagnostics &amp; more.</p>
+        <span style="display:inline-flex;align-items:center;gap:5px;margin-top:1rem;font-size:.8rem;font-weight:600;color:var(--teal);">Explore apps <i class="fas fa-arrow-right" style="font-size:.75rem;"></i></span>
+      </a>
+
+      <a href="services.html" style="display:block; padding:2rem 1.6rem; background:var(--bg); border:1px solid var(--border); border-radius:var(--r-lg); transition: border-color .25s, transform .25s, box-shadow .25s;" onmouseover="this.style.borderColor='rgba(0,169,140,.28)';this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,.07)'" onmouseout="this.style.borderColor='';this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:1.8rem; margin-bottom:.9rem;">🏗️</div>
+        <h3 style="font-family:var(--f-head);font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;letter-spacing:-.01em;">Custom Services</h3>
+        <p style="font-size:.87rem;color:var(--t-65);line-height:1.65;">School systems, library management, receipt managers, courier dispatch — tailored to your workflow.</p>
+        <span style="display:inline-flex;align-items:center;gap:5px;margin-top:1rem;font-size:.8rem;font-weight:600;color:var(--teal);">See services <i class="fas fa-arrow-right" style="font-size:.75rem;"></i></span>
+      </a>
+
+      <a href="stack.html" style="display:block; padding:2rem 1.6rem; background:var(--bg); border:1px solid var(--border); border-radius:var(--r-lg); transition: border-color .25s, transform .25s, box-shadow .25s;" onmouseover="this.style.borderColor='rgba(0,169,140,.28)';this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,.07)'" onmouseout="this.style.borderColor='';this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:1.8rem; margin-bottom:.9rem;">⚡</div>
+        <h3 style="font-family:var(--f-head);font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;letter-spacing:-.01em;">My Stack</h3>
+        <p style="font-size:.87rem;color:var(--t-65);line-height:1.65;">Vanilla JS, HTML5, CSS3, PWA service workers, SQLite, PHP. Fast, lean, zero cloud dependency.</p>
+        <span style="display:inline-flex;align-items:center;gap:5px;margin-top:1rem;font-size:.8rem;font-weight:600;color:var(--teal);">See tech <i class="fas fa-arrow-right" style="font-size:.75rem;"></i></span>
+      </a>
+
+      <a href="contact.html" style="display:block; padding:2rem 1.6rem; background:var(--teal-dim); border:1px solid rgba(0,169,140,.2); border-radius:var(--r-lg); transition: border-color .25s, transform .25s, box-shadow .25s;" onmouseover="this.style.borderColor='rgba(0,169,140,.45)';this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,.07)'" onmouseout="this.style.borderColor='rgba(0,169,140,.2)';this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:1.8rem; margin-bottom:.9rem;">💬</div>
+        <h3 style="font-family:var(--f-head);font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;letter-spacing:-.01em;">Hire Me</h3>
+        <p style="font-size:.87rem;color:var(--t-65);line-height:1.65;">Got a project idea? Reach out via WhatsApp, email, or the contact form and let's build it.</p>
+        <span style="display:inline-flex;align-items:center;gap:5px;margin-top:1rem;font-size:.8rem;font-weight:600;color:var(--teal);">Get in touch <i class="fas fa-arrow-right" style="font-size:.75rem;"></i></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <div class="gnoke-mark">G</div>
+        Edmund Sparrow · Gnoke
+      </div>
+      <p>© 2025 Edmund Sparrow. All rights reserved.</p>
+      <div class="foot-links">
+        <a href="https://github.com/edmundsparrow" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/2349024054758" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="background.js"></script>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  // Close on outside click
+  document.addEventListener('click', e => {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    }
+  });
+</script>
+</body>
+</html>

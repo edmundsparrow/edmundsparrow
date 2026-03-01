@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Edmund Sparrow</title>
+  <meta name="description" content="Get in touch with Edmund Sparrow to start a custom web application project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="background.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="index.html" class="nav-brand">
+      <div class="gnoke-mark">G</div>
+      <span class="nav-name">Edmund <span>Sparrow</span></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="gnoke.html">Gnoke Suite</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="stack.html">Stack</a></li>
+      <li><a href="contact.html" class="nav-hire active">Hire Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1>Contact <span>Me</span></h1>
+    <p>How To Reach Me</p>
+  </div>
+</div>
+
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <div class="contact-left">
+        <p class="sec-label" style="text-align:left;">Direct Contact</p>
+        <h2>Reach Me<br><span>Directly.</span></h2>
+        <p>Fastest response via WhatsApp. I typically reply within a few hours during business hours (WAT).</p>
+
+        <div class="contact-links">
+          <a href="https://wa.me/2349024054758" target="_blank" class="c-link">
+            <div class="c-link-icon wa"><i class="fab fa-whatsapp"></i></div>
+            <div class="c-link-text">
+              <small>WhatsApp</small>
+              <span>+234 9024054758</span>
+            </div>
+          </a>
+          <a href="/cdn-cgi/l/email-protection#482d2c253d262c3b38293a3a273f082f25292124662b2725" class="c-link">
+            <div class="c-link-icon gm"><i class="fas fa-envelope"></i></div>
+            <div class="c-link-text">
+              <small>Email</small>
+        <span>
+  <span>webapplications5050@gmail.com</span>
+</span>      </div>
+          </a>
+          <a href="https://github.com/edmundsparrow" target="_blank" class="c-link">
+            <div class="c-link-icon gh"><i class="fab fa-github"></i></div>
+            <div class="c-link-text">
+              <small>GitHub</small>
+              <span>edmundsparrow</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <h3>Send a Message</h3>
+
+        <div class="f-row">
+          <div class="f-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Full name">
+          </div>
+          <div class="f-group">
+            <label>Email</label>
+            <input type="email" placeholder="you@example.com">
+          </div>
+        </div>
+
+        <div class="f-group">
+          <label>What Do You Need?</label>
+          <select>
+            <option value="">Select a project type...</option>
+            <option>Custom PWA / Web App</option>
+            <option>School Results System</option>
+            <option>Library Management System</option>
+            <option>Receipt &amp; Sales Manager</option>
+            <option>Courier / Dispatch System</option>
+            <option>Business Website</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="f-group">
+          <label>Message</label>
+          <textarea placeholder="Describe your project or idea..."></textarea>
+        </div>
+
+        <button class="btn btn-teal" style="width:100%;justify-content:center;">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <div class="gnoke-mark">G</div>
+        Edmund Sparrow · Gnoke
+      </div>
+      <p>© 2025 Edmund Sparrow. All rights reserved.</p>
+      <div class="foot-links">
+        <a href="https://github.com/edmundsparrow" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/2349024054758" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', e => {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    }
+  });
+</script>
+</body>
+</html>

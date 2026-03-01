@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack — Edmund Sparrow</title>
+  <meta name="description" content="The technology stack Edmund Sparrow uses to build offline-first PWAs and enterprise web apps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="background.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="index.html" class="nav-brand">
+      <div class="gnoke-mark">G</div>
+      <span class="nav-name">Edmund <span>Sparrow</span></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="gnoke.html">Gnoke Suite</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="stack.html" class="active">Stack</a></li>
+      <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1>My <span>Stack</span></h1>
+    <p>Technology</p>
+  </div>
+</div>
+
+
+<!-- STACK -->
+<section class="stack">
+  <div class="container">
+
+    <div class="stack-grid">
+      <div class="stack-item"><div class="s-icon">🌐</div><p>HTML5</p><small>Semantic markup</small></div>
+      <div class="stack-item"><div class="s-icon">🎨</div><p>CSS3</p><small>Tailwind &amp; vanilla</small></div>
+      <div class="stack-item"><div class="s-icon">⚡</div><p>JavaScript</p><small>ES6+ / vanilla</small></div>
+      <div class="stack-item"><div class="s-icon">📱</div><p>PWA</p><small>Service workers</small></div>
+      <div class="stack-item"><div class="s-icon">🗄️</div><p>SQLite</p><small>Local-first DB</small></div>
+      <div class="stack-item"><div class="s-icon">🐘</div><p>PHP</p><small>Server-side logic</small></div>
+      <div class="stack-item"><div class="s-icon">📦</div><p>JSON</p><small>Data storage</small></div>
+      <div class="stack-item"><div class="s-icon">🔧</div><p>Git</p><small>Version control</small></div>
+    </div>
+
+    <!-- Philosophy section -->
+    <div style="margin-top:4rem; display:grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap:1.2rem;">
+
+      <div style="padding:2rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);">
+        <div style="font-size:1.5rem;margin-bottom:.9rem;">🔌</div>
+        <h3 style="font-family:var(--f-head);font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;">Offline-First</h3>
+        <p style="font-size:.87rem;color:var(--t-65);line-height:1.65;">Every app I build is designed to work without internet. Service workers cache assets and data locally — unreliable connections are a non-issue.</p>
+      </div>
+
+      <div style="padding:2rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);">
+        <div style="font-size:1.5rem;margin-bottom:.9rem;">🚀</div>
+        <h3 style="font-family:var(--f-head);font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;">No Framework Lock-in</h3>
+        <p style="font-size:.87rem;color:var(--t-65);line-height:1.65;">I write vanilla JS and CSS. No React, no Vue, no npm dependency sprawl. Your app loads fast, stays maintainable, and never breaks from an update.</p>
+      </div>
+
+      <div style="padding:2rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);">
+        <div style="font-size:1.5rem;margin-bottom:.9rem;">💾</div>
+        <h3 style="font-family:var(--f-head);font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;">Local Data</h3>
+        <p style="font-size:.87rem;color:var(--t-65);line-height:1.65;">SQLite and JSON keep data on the device. No monthly cloud bills, no data leaks, no dependency on third-party servers. Your data stays yours.</p>
+      </div>
+
+      <div style="padding:2rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);">
+        <div style="font-size:1.5rem;margin-bottom:.9rem;">📲</div>
+        <h3 style="font-family:var(--f-head);font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;">Installable PWAs</h3>
+        <p style="font-size:.87rem;color:var(--t-65);line-height:1.65;">All apps can be installed directly from the browser on Android, iOS, Windows, or desktop — no app store, no approval process, instant updates.</p>
+      </div>
+
+    </div>
+
+    <div class="cta-box" style="margin-top:3rem;">
+      <p class="sec-label">Ready to Build?</p>
+      <h3>Let's Use This Stack For Your Project</h3>
+      <p>Tell me what you need and I'll build something fast, reliable, and yours forever.</p>
+      <a href="contact.html" class="btn btn-teal">
+        <i class="fas fa-paper-plane"></i> Start a Project
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <div class="gnoke-mark">G</div>
+        Edmund Sparrow · Gnoke
+      </div>
+      <p>© 2025 Edmund Sparrow. All rights reserved.</p>
+      <div class="foot-links">
+        <a href="https://github.com/edmundsparrow" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/2349024054758" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', e => {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    }
+  });
+</script>
+</body>
+</html>
