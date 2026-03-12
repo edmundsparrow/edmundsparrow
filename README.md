@@ -56,7 +56,7 @@ I am available for freelance and contract work, especially:
 - Database/web integration projects  
 - Custom software tooling  
 
-Feel free to reach out via email: [ekongmikpe@gmail.com](mailto: ekongmikpe@gmail.com)  
+Feel free to reach out via email: [ekongmikpe@gmail.com](mailto:ekongmikpe@gmail.com)  
 Or message me on GitHub: [Contact me](https://github.com/edmundsparrow)
 
 I’m happy to discuss your project requirements and provide a solution.
