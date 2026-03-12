@@ -1,23 +1,22 @@
 /**
  * background.js
- * Automatically injects a faint background image into the .page-hero
- * section of each page based on the current page filename.
+ * Injects a faint background image into the hero section of each page.
  *
- * Image naming convention:
- *   index.html    → images/home.jpg
- *   gnoke.html    → images/gnoke.jpg
- *   services.html → images/services.jpg
- *   stack.html    → images/stack.jpg
- *   contact.html  → images/contact.jpg
- *
- * Just drop your images in an /images/ folder next to the HTML files.
+ * Image naming convention (place files in an /images/ folder):
+ *   index.html    → images/home.png  (or .jpg / .webp)
+ *   gnoke.html    → images/gnoke.png
+ *   services.html → images/services.png
+ *   stack.html    → images/stack.png
+ *   contact.html  → images/contact.png
+ *   mission.html  → images/mission.png
  */
 
 (function () {
-  // Map page filenames to image names
+
+  /* ── Page → image name map ── */
   const PAGE_IMAGES = {
     'index.html'    : 'home',
-    ''              : 'home',       // handles root /
+    ''              : 'home',
     'gnoke.html'    : 'gnoke',
     'services.html' : 'services',
     'stack.html'    : 'stack',
@@ -25,38 +24,34 @@
     'mission.html'  : 'mission',
   };
 
-  // How faint the image appears (0 = invisible, 1 = full)
-  const OPACITY = 0.10;
+  /* Extensions tried in order — png first */
+  const EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp'];
 
-  // Supported extensions to try in order
-  const EXTENSIONS = ['jpg', 'jpeg', 'webp', 'png'];
-
+  /* ── Resolve current page key, case-insensitive ── */
   function getPageKey() {
-    const path = window.location.pathname;
-    const file = path.split('/').pop() || '';
-    return file;
+    const file = window.location.pathname.split('/').pop() || '';
+    return file.toLowerCase();
   }
 
+  /* ── Apply image to a hero element ── */
   function applyHeroBackground(hero, imageName) {
-    // Try each extension until one loads
-    let tried = 0;
 
     function tryNext(index) {
-      if (index >= EXTENSIONS.length) return; // none worked, leave as-is
+      if (index >= EXTENSIONS.length) return;
 
-      const src = `images/${imageName}.${EXTENSIONS[index]}`;
+      const src = 'images/' + imageName + '.' + EXTENSIONS[index];
       const img = new Image();
 
-      img.onload = () => {
-        hero.style.backgroundImage    = `url('${src}')`;
+      img.onload = function () {
+        hero.style.backgroundImage    = "url('" + src + "')";
         hero.style.backgroundSize     = 'cover';
         hero.style.backgroundPosition = 'center';
         hero.style.backgroundRepeat   = 'no-repeat';
         hero.style.position           = 'relative';
         hero.classList.add('has-bg');
 
-        // Dark overlay so text sits bold and clear on top of the image
-        let overlay = hero.querySelector('.hero-bg-overlay');
+        /* Dark overlay so text stays readable */
+        var overlay = hero.querySelector('.hero-bg-overlay');
         if (!overlay) {
           overlay = document.createElement('div');
           overlay.className = 'hero-bg-overlay';
@@ -64,49 +59,47 @@
           hero.insertBefore(overlay, hero.firstChild);
         }
 
-        Object.assign(overlay.style, {
-          position        : 'absolute',
-          inset           : '0',
-          background      : 'rgba(10, 20, 30, 0.58)',
-          pointerEvents   : 'none',
-          zIndex          : '0',
-        });
+        overlay.style.position      = 'absolute';
+        overlay.style.inset         = '0';
+        overlay.style.background    = 'rgba(10, 20, 30, 0.62)';
+        overlay.style.pointerEvents = 'none';
+        overlay.style.zIndex        = '0';
 
-        // Make sure hero content sits above the overlay
-        Array.from(hero.children).forEach(child => {
+        /* Lift hero children above the overlay */
+        Array.from(hero.children).forEach(function (child) {
           if (!child.classList.contains('hero-bg-overlay')) {
             if (!child.style.position || child.style.position === 'static') {
               child.style.position = 'relative';
             }
-            if (!child.style.zIndex) {
-              child.style.zIndex = '1';
-            }
+            if (!child.style.zIndex) child.style.zIndex = '1';
           }
         });
       };
 
-      img.onerror = () => tryNext(index + 1);
+      img.onerror = function () { tryNext(index + 1); };
       img.src = src;
     }
 
     tryNext(0);
   }
 
+  /* ── Init ── */
   function init() {
-    const hero = document.querySelector('.page-hero');
-    if (!hero) return; // home page has .hero not .page-hero — skip
-
-    const key       = getPageKey();
-    const imageName = PAGE_IMAGES[key];
+    var key = getPageKey();
+    var imageName = PAGE_IMAGES[key];
     if (!imageName) return;
+
+    /* Inner pages use .page-hero, home page uses .hero */
+    var hero = document.querySelector('.page-hero') || document.querySelector('.hero');
+    if (!hero) return;
 
     applyHeroBackground(hero, imageName);
   }
 
-  // Run after DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
     init();
   }
+
 })();
