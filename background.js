@@ -22,6 +22,7 @@
     'services.html' : 'services',
     'stack.html'    : 'stack',
     'contact.html'  : 'contact',
+    'mission.html'  : 'mission',
   };
 
   // How faint the image appears (0 = invisible, 1 = full)

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mission — Edmund Sparrow</title>
+  <meta name="description" content="Why Edmund Sparrow builds offline-first, lean, low-footprint tools for underserved communities in low-connectivity environments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="background.js" defer></script>
+</head>
+<body>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+<header>
+  <nav class="container">
+    <a href="index.html" class="nav-brand">
+      <div class="gnoke-mark"><img src="gnokenstationlogo_1.webp" alt="Gnoke logo"></div>
+      <span class="nav-name">Edmund <span>Sparrow</span></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+<ul class="nav-links" id="nav-links">
+  <li><a href="gnoke.html">Gnoke Suite</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="stack.html">Stack</a></li>
+  <li><a href="mission.html" class="active">Mission</a></li>
+  <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
+</ul>
+
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1>Built With <span>Purpose.</span></h1>
+    <p>Why We Build This Way</p>
+  </div>
+</div>
+
+
+<!-- PRINCIPLES BODY -->
+<section class="principles-section">
+  <div class="container">
+
+    <!-- Opening statement -->
+    <div class="p-opening">
+      <p class="sec-label">The Problem</p>
+      <h2 class="sec-title" style="text-align:left; max-width: 640px;">
+        Most software assumes infrastructure<br>
+        <span style="color:var(--teal); font-style:italic;">that doesn't exist here.</span>
+      </h2>
+      <p class="p-lead">
+        Stable power. Fast internet. Monthly subscription budgets. 
+        These are not guaranteed realities for the schools, retailers, transport operators 
+        and small businesses in underserved communities that need digital tools the most. 
+        The mainstream software industry largely builds past them. Gnoke doesn't.
+      </p>
+    </div>
+
+    <hr class="divider" style="margin: 3rem 0;">
+
+    <!-- Three pillars -->
+    <div class="pillars-grid">
+
+      <div class="pillar">
+        <div class="pillar-number">01</div>
+        <h3>Offline First.</h3>
+        <p>
+          Every tool in the Gnoke suite works without an internet connection. 
+          Data lives on the device. Service workers handle caching. 
+          A power cut or a dead SIM card doesn't stop your business.
+          This is not a feature — it is the baseline.
+        </p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-number">02</div>
+        <h3>No Bloat.</h3>
+        <p>
+          No frameworks added for convenience. No npm dependency chains 
+          that break silently. No third-party servers that shut down 
+          and take your data with them. Lean code means fast loads, 
+          low storage, and full control in the hands of the person using it.
+        </p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-number">03</div>
+        <h3>Lighter Footprint.</h3>
+        <p>
+          Fewer round trips to distant servers means less energy consumed 
+          per user interaction. Local-first architecture is not just 
+          practical for low-connectivity environments — it is a quieter, 
+          greener way to build software at scale.
+        </p>
+      </div>
+
+    </div>
+
+    <hr class="divider" style="margin: 3rem 0;">
+
+    <!-- Who it serves -->
+    <div class="served-block">
+      <p class="sec-label" style="text-align:left;">Who This Reaches</p>
+      <h2 style="font-family:var(--f-head); font-size:clamp(1.5rem,3vw,2.2rem); font-weight:400; color:var(--ink); letter-spacing:-.01em; margin-bottom:1.8rem; max-width:520px; line-height:1.2;">
+        Real operators. Real institutions.<br>Already using these tools.
+      </h2>
+
+      <div class="served-grid">
+        <div class="served-item">
+          <div class="served-icon">🏫</div>
+          <div>
+            <strong>Schools</strong>
+            <span>Result computation, report sheets, student records — no cloud account needed.</span>
+          </div>
+        </div>
+        <div class="served-item">
+          <div class="served-icon">📚</div>
+          <div>
+            <strong>Libraries</strong>
+            <span>Book inventory and borrow tracking that runs on any cheap Android device.</span>
+          </div>
+        </div>
+        <div class="served-item">
+          <div class="served-icon">🛒</div>
+          <div>
+            <strong>Retailers</strong>
+            <span>Receipts, daily sales, and stock records without a monthly SaaS bill.</span>
+          </div>
+        </div>
+        <div class="served-item">
+          <div class="served-icon">🚐</div>
+          <div>
+            <strong>Transport operators</strong>
+            <span>Dispatch and fleet management tools built for challenging real-world conditions.</span>
+          </div>
+        </div>
+        <div class="served-item">
+          <div class="served-icon">⛽</div>
+          <div>
+            <strong>Gas stations</strong>
+            <span>Station management that keeps working when connectivity cuts out mid-shift.</span>
+          </div>
+        </div>
+        <div class="served-item">
+          <div class="served-icon">🏥</div>
+          <div>
+            <strong>Diagnostics & clinics</strong>
+            <span>Patient and diagnostic records stored locally, privately, reliably.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" style="margin: 3rem 0;">
+
+    <!-- Closing — collaboration, not begging -->
+    <div class="collab-block">
+      <div class="collab-text">
+        <p class="sec-label" style="text-align:left;">Collaborate</p>
+        <h2 style="font-family:var(--f-head); font-size:clamp(1.6rem,3vw,2.4rem); font-weight:400; color:var(--ink); letter-spacing:-.02em; line-height:1.15; margin-bottom:1rem;">
+          This work is open<br>
+          <span style="color:var(--teal); font-style:italic;">to the right partnerships.</span>
+        </h2>
+        <p style="font-size:.97rem; color:var(--t-65); line-height:1.8; font-weight:300; max-width:500px; margin-bottom:1.8rem;">
+          Institutional use, grants, NGO deployment, or research collaboration — 
+          if your work intersects with digital inclusion, low-resource computing, 
+          or sustainable software, let's talk.
+        </p>
+        <a href="contact.html" class="btn btn-teal">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </a>
+      </div>
+
+      <div class="collab-stats">
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Tools shipped</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Cloud dependencies</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Recurring fees for users</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Offline capable</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="support-banner">
+  <div class="container">
+    <p><strong>Building free offline-first tools for communities that need them most.</strong></p>
+    <a href="https://selar.com/showlove/edmundsparrow" target="_blank" rel="noopener" class="support-btn">
+      💕 Support This Work
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <div class="gnoke-mark"><img src="gnokenstationlogo_1.webp" alt="Gnoke logo"></div>
+        Edmund Sparrow · Gnoke
+      </div>
+
+      <p>© 2025 – <span class="copy-year"></span> Edmund Sparrow. All rights reserved.</p>
+
+      <div class="foot-links">
+        <a href="https://github.com/edmundsparrow" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://wa.me/2349024054758" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/edmundsparrow" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="menu.js" defer></script>
+<script src="animate.js" defer></script>
+<script>
+  document.querySelectorAll('.copy-year').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
+</script>
+</body>
+</html>

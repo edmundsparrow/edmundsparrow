@@ -2,44 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Edmund Sparrow — Gnoke Developer</title>
   <meta name="description" content="Edmund Sparrow builds offline-first PWAs and custom web applications for businesses. Creator of the Gnoke suite of tools.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ══════════════════════════════════
-     HEADER
-══════════════════════════════════ -->
+<div class="nav-overlay" id="nav-overlay"></div>
 <header>
   <nav class="container">
     <a href="index.html" class="nav-brand">
-      <div class="gnoke-mark">G</div>
+      <div class="gnoke-mark"><img src="gnokenstationlogo_1.webp" alt="Gnoke logo"></div>
       <span class="nav-name">Edmund <span>Sparrow</span></span>
     </a>
 
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
-    </button>
-
-    <ul class="nav-links" id="nav-links">
+    </button></nav>
+</header>
+<ul class="nav-links" id="nav-links">
       <li><a href="gnoke.html">Gnoke Suite</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="stack.html">Stack</a></li>
-      <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
+      <li><a href="mission.html">Mission</a></li>
+  <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
     </ul>
-  </nav>
-</header>
 
 
-<!-- ══════════════════════════════════
-     HERO
-══════════════════════════════════ -->
 <section class="hero">
   <div class="hero-blob2" aria-hidden="true"></div>
   <div class="container">
@@ -51,7 +45,6 @@
       </div>
 
       <h1>
-        <span class="name-line">Edmund Sparrow</span>
         Building Apps That<br>Work <span class="accent">Anywhere.</span>
       </h1>
 
@@ -81,9 +74,6 @@
 
 <hr class="divider">
 
-<!-- ══════════════════════════════════
-     PREVIEW STRIPS
-══════════════════════════════════ -->
 <section style="padding: 4rem 0; background: var(--bg-card);">
   <div class="container">
     <p class="sec-label">What I Do</p>
@@ -125,43 +115,48 @@
 </section>
 
 
-<!-- ══════════════════════════════════
-     FOOTER
-══════════════════════════════════ -->
+<div class="support-banner">
+  <div class="container">
+    <p><strong>Building free offline-first tools for communities that need them most.</strong></p>
+    <a href="https://selar.com/showlove/edmundsparrow" target="_blank" rel="noopener" class="support-btn">
+      💕 Support This Work
+    </a>
+  </div>
+</div>
+
 <footer>
   <div class="container">
     <div class="foot-inner">
       <div class="foot-brand">
-        <div class="gnoke-mark">G</div>
+        <div class="gnoke-mark"><img src="gnokenstationlogo_1.webp" alt="Gnoke logo"></div>
         Edmund Sparrow · Gnoke
       </div>
-      <p>© 2025 Edmund Sparrow. All rights reserved.</p>
+
+      <p>© 2025 – <span class="copy-year"></span> Edmund Sparrow. All rights reserved.</p>
+
       <div class="foot-links">
-        <a href="https://github.com/edmundsparrow" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://wa.me/2349024054758" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/edmundsparrow" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://wa.me/2349024054758" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/edmundsparrow" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
     </div>
   </div>
 </footer>
 
   <script src="background.js"></script>
-
-  <script>
-  const hamburger = document.getElementById('hamburger');
-  const navLinks  = document.getElementById('nav-links');
-  hamburger.addEventListener('click', () => {
-    const open = hamburger.classList.toggle('open');
-    navLinks.classList.toggle('open');
-    hamburger.setAttribute('aria-expanded', open);
-  });
-  // Close on outside click
-  document.addEventListener('click', e => {
-    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-      hamburger.classList.remove('open');
-      navLinks.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', false);
-    }
+  <script src="menu.js"></script>
+<script src="animate.js" defer></script>
+<script>
+  document.querySelectorAll('.copy-year').forEach(el => {
+    el.textContent = new Date().getFullYear();
   });
 </script>
 </body>
