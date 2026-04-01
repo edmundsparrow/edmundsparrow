@@ -14,8 +14,11 @@ A collection of lightweight web tools designed to fight software bloat and techn
 • **Gnoke Library** – Simple library record management tool  
 • **Gnoke Manifest** – Manifest and record tracking system  
 • **Gnoke GeoCompass** - GPS compass with real-time bearing, distance, speed, and city search
+
 • **Gnoke Tailors** – Focussed business tool for tailors — deadlines, customer memory, and money clarity
+
 • **Gnoke SignalTower** – industrial signal tower functionality using just a browser
+
 • **Gnoke Receipts** – Receipt Webapp for invoicing and ledger management  
 
 Check each project’s repository for more details.
