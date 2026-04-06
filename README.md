@@ -1,69 +1,77 @@
 # Edmund Sparrow
 
-Independent developer building lightweight and efficient web applications.
-
-I focus on creating simple tools that fight unnecessary software bloat and technical debt.
-
----
-
-## 🚀 Gnoke Ecosystem
-
-A collection of lightweight web tools designed to fight software bloat and technical debt.
-
-• **Gnoke Gasap** – Gas sales and record management system  
-• **Gnoke Library** – Simple library record management tool  
-• **Gnoke Manifest** – Manifest and record tracking system  
-• **Gnoke GeoCompass** - GPS compass with real-time bearing, distance, speed, and city search
-
-• **Gnoke Tailors** – Focussed business tool for tailors — deadlines, customer memory, and money clarity
-
-• **Gnoke SignalTower** – industrial signal tower functionality using just a browser
-
-• **Gnoke Receipts** – Receipt Webapp for invoicing and ledger management  
-
-Check each project’s repository for more details.
+Full-stack web developer based in Port Harcourt, Nigeria.
+I build offline-first PWAs and lightweight browser tools — fast, lean, and dependency-free.
 
 ---
 
-## ⚙️ Philosophy
+## Gnoke Suite
 
-Modern software is often heavy and bloated.
+A growing collection of offline-first web applications built for real businesses and everyday use.
+No cloud. No accounts. No bloat. Everything runs in the browser and stores data locally.
 
-My goal is to build lightweight, efficient web applications that run fast,
-use minimal resources, and remain simple to maintain.
+| App | What it does |
+|---|---|
+| [Gnoke Station](https://edmundsparrow.github.io/gnokestation) | Lightweight browser WebOS — hardware control via WebUSB, Serial & Bluetooth |
+| [Gnoke OBD2](https://edmundsparrow.github.io/Gnoke-OBD2) | Professional car diagnostics — live gauges, DTC codes, VIN, data logger |
+| [Gnoke Manifest](https://edmundsparrow.github.io/Gnoke-Manifest) | Passenger booking and trip management for road transport operators |
+| [Gnoke Petroleum](https://edmundsparrow.github.io/gnoke-petroleum) | Daily fuel sales tracking — PMS, AGO, Kerosene, LPG |
+| [Gnoke Gas](https://edmundsparrow.github.io/gnoke-gasap) | Gas sales tracking and inventory records |
+| [Gnoke Library](https://edmundsparrow.github.io/gnoke-library) | Book catalogue, loan tracking and returns |
+| [Gnoke College](https://edmundsparrow.github.io/gnoke-college) | School management — students, staff, and results |
+| [Gnoke Tailors](https://edmundsparrow.github.io/gnoke-tailors) | Orders, deadlines and customer records for tailors |
+| [Gnoke Reader](https://edmundsparrow.github.io/gnoke-reader) | Universal offline file viewer — PDF, DOCX, CSV, JSON, logs and more |
+| [Gnoke DataForge](https://edmundsparrow.github.io/gnoke-dataforge) | Relational schema modeler — export to SQLite, SQL, JSON, CSV |
+| [Gnoke GeoCompass](https://edmundsparrow.github.io/gnoke-geocompass) | GPS compass with real-time bearing, distance and city search |
+| [Gnoke SignalTower](https://edmundsparrow.github.io/gnoke-signaltower) | Industrial Andon stack light controller for shop floors |
+| [Gnoke Irrigation](https://edmundsparrow.github.io/gnoke-irrigation-hmi) | Irrigation zone scheduling and monitoring for farmers |
+| [Gnoke Organizer](https://edmundsparrow.github.io/gnoke-organizer) | Task management with priorities, scheduling and filters |
+| [Gnoke Receipts](https://edmundsparrow.github.io/gnoke-receipts) | Receipt and invoicing management |
+| [Gnoke ZIP](https://edmundsparrow.github.io/gnoke-zip) | Create and extract ZIP, RAR, 7Z and ISO files in the browser |
+| [Gnoke Courier](https://github.com/edmundsparrow/gnoke-courier) | Parcel logging and tracking for logistics teams |
+
+More apps in progress. 
 
 ---
 
-## 🧰 Stack
+## Stack
 
-• HTML  
-• CSS  
-• JavaScript  
-• SQL.js  
-• Progressive Web Apps (PWA)
+HTML · CSS · Vanilla JavaScript · SQLite (sql.js / WASM) · IndexedDB · PWA Service Workers
+
+No frameworks. No build steps. No cloud dependencies.
 
 ---
 
-## ❤️ Support My Work
+## Philosophy
 
-If my tools are useful to you, you can support the work here:
+Most software assumes reliable internet, modern hardware and a paid subscription.
+A lot of people don't have all three.
 
-[Show Love on Selar](https://selar.com/showlove/edmundsparrow)
-
-Your support means a lot and helps keep these tools free.  
-God bless you.
+The Gnoke Suite is built to work on a low-spec Android phone with patchy data,
+in a fuel station, a tailor shop, a school or a transport yard —
+and still do the job properly.
 
 ---
 
-## 💼 Hire Me
+## Hire Me
 
-I am available for freelance and contract work, especially:
+Available for freelance and contract work:
 
-- Web app development (lightweight, efficient, PWA)  
-- Database/web integration projects  
-- Custom software tooling  
+- Offline-first PWA development
+- Lightweight HMI and admin tools
+- Custom business software (schools, logistics, retail, agriculture)
+- Browser-based hardware interfaces (WebUSB, Web Serial, Bluetooth)
 
-Feel free to reach out via email: [ekongmikpe@gmail.com](mailto:ekongmikpe@gmail.com)  
-Or message me on GitHub: [Contact me](https://github.com/edmundsparrow)
+📧 [ekongmikpe@gmail.com](mailto:ekongmikpe@gmail.com)
+💬 [WhatsApp](https://wa.me/09024054758)
+🔗 [LinkedIn](https://linkedin.com/in/edmundsparrow)
+🌐 [edmundsparrow.netlify.app](https://edmundsparrow.netlify.app)
 
-I’m happy to discuss your project requirements and provide a solution.
+---
+
+## Support
+
+If any of these tools are useful to you:
+[selar.com/showlove/edmundsparrow](https://selar.com/showlove/edmundsparrow)
+
+© 2026 Edmund Sparrow
