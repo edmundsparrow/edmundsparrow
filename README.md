@@ -71,7 +71,7 @@ Available for freelance and contract work:
 
 ## Support
 
-If any of these tools are useful to you:
+If any of my tools are useful to you:
 [selar.com/showlove/edmundsparrow](https://selar.com/showlove/edmundsparrow)
 
 © 2026 Edmund Sparrow
