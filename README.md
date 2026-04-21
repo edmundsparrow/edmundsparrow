@@ -20,17 +20,19 @@ No cloud. No accounts. No bloat. Everything runs in the browser and stores data 
 | [Gnoke Library](https://edmundsparrow.github.io/gnoke-library) | Book catalogue, loan tracking and returns |
 | [Gnoke College](https://edmundsparrow.github.io/gnoke-college) | School management — students, staff, and results |
 | [Gnoke Tailors](https://edmundsparrow.github.io/gnoke-tailors) | Orders, deadlines and customer records for tailors |
+| [Gnoke Courier](https://github.com/edmundsparrow/gnoke-courier) | Parcel logging and tracking for logistics teams |
 | [Gnoke Reader](https://edmundsparrow.github.io/gnoke-reader) | Universal offline file viewer — PDF, DOCX, CSV, JSON, logs and more |
+| [Gnoke Player](https://edmundsparrow.github.io/gnoke-player) | High-performance local media player with professional-grade controls |
+| [Gnoke ZIP](https://edmundsparrow.github.io/gnoke-zip) | Create and extract ZIP, RAR, 7Z and ISO files in the browser |
 | [Gnoke DataForge](https://edmundsparrow.github.io/gnoke-dataforge) | Relational schema modeler — export to SQLite, SQL, JSON, CSV |
-| [Gnoke GeoCompass](https://edmundsparrow.github.io/gnoke-geocompass) | GPS compass with real-time bearing, distance and city search |
 | [Gnoke SignalTower](https://edmundsparrow.github.io/gnoke-signaltower) | Industrial Andon stack light controller for shop floors |
 | [Gnoke Irrigation](https://edmundsparrow.github.io/gnoke-irrigation-hmi) | Irrigation zone scheduling and monitoring for farmers |
+| [Gnoke Logbook](https://edmundsparrow.github.io/gnoke-logbook) | Daily task logger with automated weekly report exports |
 | [Gnoke Organizer](https://edmundsparrow.github.io/gnoke-organizer) | Task management with priorities, scheduling and filters |
+| [Shopping Trip](https://edmundsparrow.github.io/gnoke-market-woman-list) | Smart offline shopping list with budget tracking and price estimation |
 | [Gnoke Receipts](https://edmundsparrow.github.io/gnoke-receipts) | Receipt and invoicing management |
-| [Gnoke ZIP](https://edmundsparrow.github.io/gnoke-zip) | Create and extract ZIP, RAR, 7Z and ISO files in the browser |
-| [Gnoke Courier](https://github.com/edmundsparrow/gnoke-courier) | Parcel logging and tracking for logistics teams |
-
-More apps in progress. 
+| [Gnoke GeoCompass](https://edmundsparrow.github.io/gnoke-geocompass) | GPS compass with real-time bearing, distance and city search |
+| [Gnoke Bible](https://edmundsparrow.github.io/gnoke-bible) | Lightweight, offline-first Holy Bible (KJV) reader |
 
 ---
 
