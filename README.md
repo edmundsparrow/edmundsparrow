@@ -10,7 +10,7 @@ I build offline-first PWAs and lightweight browser tools — fast, lean, and dep
 A growing collection of offline-first web applications built for real businesses and everyday use.
 No cloud. No accounts. No bloat. Everything runs in the browser and stores data locally.
 
-| App | What it does |
+| App | | App | What it does |
 |---|---|
 | [Gnoke Station](https://edmundsparrow.github.io/gnokestation) | Lightweight browser WebOS — hardware control via WebUSB, Serial & Bluetooth |
 | [Gnoke OBD2](https://edmundsparrow.github.io/Gnoke-OBD2) | Professional car diagnostics — live gauges, DTC codes, VIN, data logger |
@@ -24,6 +24,7 @@ No cloud. No accounts. No bloat. Everything runs in the browser and stores data 
 | [Gnoke Reader](https://edmundsparrow.github.io/gnoke-reader) | Universal offline file viewer — PDF, DOCX, CSV, JSON, logs and more |
 | [Gnoke Player](https://edmundsparrow.github.io/gnoke-player) | High-performance local media player with professional-grade controls |
 | [Gnoke ZIP](https://edmundsparrow.github.io/gnoke-zip) | Create and extract ZIP, RAR, 7Z and ISO files in the browser |
+| [Gnoke FlatJSON](https://edmundsparrow.github.io/gnoke-flatjson) | Developer utility to normalize complex JSON into clean { headers, rows } |
 | [Gnoke DataForge](https://edmundsparrow.github.io/gnoke-dataforge) | Relational schema modeler — export to SQLite, SQL, JSON, CSV |
 | [Gnoke SignalTower](https://edmundsparrow.github.io/gnoke-signaltower) | Industrial Andon stack light controller for shop floors |
 | [Gnoke Irrigation](https://edmundsparrow.github.io/gnoke-irrigation-hmi) | Irrigation zone scheduling and monitoring for farmers |
