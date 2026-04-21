@@ -10,7 +10,7 @@ I build offline-first PWAs and lightweight browser tools — fast, lean, and dep
 A growing collection of offline-first web applications built for real businesses and everyday use.
 No cloud. No accounts. No bloat. Everything runs in the browser and stores data locally.
 
-| App | | App | What it does |
+| App | What it does |
 |---|---|
 | [Gnoke Station](https://edmundsparrow.github.io/gnokestation) | Lightweight browser WebOS — hardware control via WebUSB, Serial & Bluetooth |
 | [Gnoke OBD2](https://edmundsparrow.github.io/Gnoke-OBD2) | Professional car diagnostics — live gauges, DTC codes, VIN, data logger |
@@ -24,7 +24,7 @@ No cloud. No accounts. No bloat. Everything runs in the browser and stores data 
 | [Gnoke Reader](https://edmundsparrow.github.io/gnoke-reader) | Universal offline file viewer — PDF, DOCX, CSV, JSON, logs and more |
 | [Gnoke Player](https://edmundsparrow.github.io/gnoke-player) | High-performance local media player with professional-grade controls |
 | [Gnoke ZIP](https://edmundsparrow.github.io/gnoke-zip) | Create and extract ZIP, RAR, 7Z and ISO files in the browser |
-| [Gnoke FlatJSON](https://edmundsparrow.github.io/gnoke-flatjson) | Developer utility to normalize complex JSON into clean { headers, rows } |
+| [Gnoke FlatJSON](https://edmundsparrow.github.io/gnoke-flatjson) | Normalize any JSON shape into { headers, rows } — zero dependencies |
 | [Gnoke DataForge](https://edmundsparrow.github.io/gnoke-dataforge) | Relational schema modeler — export to SQLite, SQL, JSON, CSV |
 | [Gnoke SignalTower](https://edmundsparrow.github.io/gnoke-signaltower) | Industrial Andon stack light controller for shop floors |
 | [Gnoke Irrigation](https://edmundsparrow.github.io/gnoke-irrigation-hmi) | Irrigation zone scheduling and monitoring for farmers |
@@ -34,6 +34,8 @@ No cloud. No accounts. No bloat. Everything runs in the browser and stores data 
 | [Gnoke Receipts](https://edmundsparrow.github.io/gnoke-receipts) | Receipt and invoicing management |
 | [Gnoke GeoCompass](https://edmundsparrow.github.io/gnoke-geocompass) | GPS compass with real-time bearing, distance and city search |
 | [Gnoke Bible](https://edmundsparrow.github.io/gnoke-bible) | Lightweight, offline-first Holy Bible (KJV) reader |
+
+More apps in progress. 
 
 ---
 
@@ -48,7 +50,7 @@ No frameworks. No build steps. No cloud dependencies.
 ## Philosophy
 
 Most software assumes reliable internet, modern hardware and a paid subscription.
-A lot of people don't have all three.
+A lot of people do not have all three.
 
 The Gnoke Suite is built to work on a low-spec Android phone with patchy data,
 in a fuel station, a tailor shop, a school or a transport yard —
@@ -68,13 +70,13 @@ Available for freelance and contract work:
 📧 [ekongmikpe@gmail.com](mailto:ekongmikpe@gmail.com)
 💬 [WhatsApp](https://wa.me/09024054758)
 🔗 [LinkedIn](https://linkedin.com/in/edmundsparrow)
-🌐 [edmundsparrow.netlify.app](https://edmundsparrow.netlify.app)
+🌐 [edmundsparrow.github.io/edmundsparrow](https://edmundsparrow.github.io/edmundsparrow)
 
 ---
 
 ## Support
 
-If any of my tools are useful to you:
+If any of these tools are useful to you:
 [selar.com/showlove/edmundsparrow](https://selar.com/showlove/edmundsparrow)
 
 © 2026 Edmund Sparrow
