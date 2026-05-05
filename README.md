@@ -1,7 +1,20 @@
 # Edmund Sparrow
 
-Full-stack web developer based in Port Harcourt, Nigeria.
+Full-stack web developer and systems architect based in Benin City, Nigeria.
 I build offline-first PWAs and lightweight browser tools — fast, lean, and dependency-free.
+
+---
+
+## Infrastructure & Runtime
+
+These are the core durability and logic layers that power the Gnoke Suite.
+
+| Repo | Purpose |
+|---|---|
+| [Gnoke Axeon](https://github.com/edmundsparrow/gnoke-axeon) | Local-first browser runtime — acts as a mini-backend inside the browser |
+| [Gnoke SaveNative](https://github.com/edmundsparrow/gnoke-savenative) | Self-healing file write layer to survive mobile OS kills and reloads |
+| [Gnoke Spirit](https://github.com/edmundsparrow/gnoke-spirit) | Persistence layer treating tabs as processes and IndexedDB as memory |
+| [Gnoke Hackend](https://github.com/edmundsparrow/gnoke-hackend) | Portable backend configuration tool for the Gnoke Suite |
 
 ---
 
@@ -12,6 +25,7 @@ No cloud. No accounts. No bloat. Everything runs in the browser and stores data 
 
 | App | What it does |
 |---|---|
+| [Gnoke Council](https://github.com/edmundsparrow/gnoke-council) | Multi-AI discussion thread in a single HTML file with persistent sessions |
 | [Gnoke Station](https://edmundsparrow.github.io/gnokestation) | Lightweight browser WebOS — hardware control via WebUSB, Serial & Bluetooth |
 | [Gnoke OBD2](https://edmundsparrow.github.io/Gnoke-OBD2) | Professional car diagnostics — live gauges, DTC codes, VIN, data logger |
 | [Gnoke Manifest](https://edmundsparrow.github.io/Gnoke-Manifest) | Passenger booking and trip management for road transport operators |
@@ -34,6 +48,7 @@ No cloud. No accounts. No bloat. Everything runs in the browser and stores data 
 | [Gnoke Receipts](https://edmundsparrow.github.io/gnoke-receipts) | Receipt and invoicing management |
 | [Gnoke GeoCompass](https://edmundsparrow.github.io/gnoke-geocompass) | GPS compass with real-time bearing, distance and city search |
 | [Gnoke Bible](https://edmundsparrow.github.io/gnoke-bible) | Lightweight, offline-first Holy Bible (KJV) reader |
+| [Gnoke TimeTravel](https://github.com/edmundsparrow/gnoke-timetravel) | Browser-based "Cosmic Return Date" calculator and karma engine |
 
 More apps in progress. 
 
