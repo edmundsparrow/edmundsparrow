@@ -1,6 +1,6 @@
 # Edmund Sparrow
 
-Full-stack web developer and systems architect based in Benin City, Nigeria.
+Full-stack web developer and systems architect based in Nigeria.
 I build offline-first PWAs and lightweight browser tools — fast, lean, and dependency-free.
 
 ---
