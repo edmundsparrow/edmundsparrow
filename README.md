@@ -1,97 +1,108 @@
-# Edmund Sparrow
+# edmundsparrow
 
-Full-stack web developer and systems architect based in Nigeria.
-I build offline-first PWAs and lightweight browser tools — fast, lean, and dependency-free.
-
----
-
-## Infrastructure & Runtime
-
-These are the core durability and logic layers that power the Gnoke Suite.
-
-| Repo | Purpose |
-|---|---|
-| [Gnoke Axeon](https://github.com/edmundsparrow/gnoke-axeon) | Local-first browser runtime — acts as a mini-backend inside the browser |
-| [Gnoke SaveNative](https://github.com/edmundsparrow/gnoke-savenative) | Self-healing file write layer to survive mobile OS kills and reloads |
-| [Gnoke Spirit](https://github.com/edmundsparrow/gnoke-spirit) | Persistence layer treating tabs as processes and IndexedDB as memory |
-| [Gnoke Hackend](https://github.com/edmundsparrow/gnoke-hackend) | Portable backend configuration tool for the Gnoke Suite |
+**Full-Stack Web Developer. Nigeria.**  
+Building lightweight, offline-first tools for operators who can't afford the cloud to fail them.
 
 ---
 
-## Gnoke Suite
+## Gnoke-Database: Firebase in your pocket.
 
-A growing collection of offline-first web applications built for real businesses and everyday use.
-No cloud. No accounts. No bloat. Everything runs in the browser and stores data locally.
+Every indie developer knows the moment.
 
-| App | What it does |
+You build something real. People start using it. Then you open your Firebase console and see the bill growing — and you realise you don't own any of it. Your users' data lives on someone else's machine. Your app's survival depends on a pricing page you didn't write.
+
+I built the exit door.
+
+---
+
+**What it is:**
+
+A complete backend engine — collections, auth, offline sync, roles, identity isolation, OTP recovery — that runs on any PHP host with SQLite.
+
+Not a cloud service. Not a monthly subscription. A folder you upload once.
+
+The cheapest shared host you can find. The one that costs less than your data bill. That host is now your Firebase.
+
+---
+
+**What it actually does:**
+
+Your app saves records locally first. Always. No network required. When the connection returns, Gnoke pushes the queue silently. When a teammate makes a change on their device, Gnoke pulls it down. Your UI reacts. Nobody waited. Nobody lost data.
+
+This is not a workaround. This is how it should have worked from the beginning.
+
+Collections are scoped automatically — per user, per branch, per company — without you writing a single access rule by hand. Roles are defined once in a config file and enforced on every request. Staff changes device, forgets PIN — OTP recovery re-establishes the chain in under a minute. No data lost. No admin panic.
+
+---
+
+**The number that matters:**
+
+Firebase charges by reads, writes, and storage — and the meter runs whether you're watching or not.
+
+Gnoke-Database runs on SQLite. One file on your server. The bill is your hosting fee. Fixed. Predictable. Yours.
+
+---
+
+**Who this is for:**
+
+This is for the courier startup in Lagos. The school management system in Accra. The inventory app a developer built for a family business. The SaaS that doesn't need a San Francisco budget to survive.
+
+Most apps are over-engineered by default — hosted on infrastructure designed for companies a hundred times their size, paying for headroom they will never use.
+
+Gnoke-Database is the right size. Deployable in an afternoon. Owned completely.
+
+> Your backend should live on your terms — not on a pricing page you didn't write.
+
+→ [**github.com/edmundsparrow/gnoke-database**](https://github.com/edmundsparrow/gnoke-database) — MIT License.
+
+---
+
+## Gnoke Ecosystem
+
+A collection of offline-capable web tools built for real operators in real conditions.
+
+| Project | What it does |
 |---|---|
-| [Gnoke Council](https://github.com/edmundsparrow/gnoke-council) | Multi-AI discussion thread in a single HTML file with persistent sessions |
-| [Gnoke Station](https://edmundsparrow.github.io/gnokestation) | Lightweight browser WebOS — hardware control via WebUSB, Serial & Bluetooth |
-| [Gnoke OBD2](https://edmundsparrow.github.io/Gnoke-OBD2) | Professional car diagnostics — live gauges, DTC codes, VIN, data logger |
-| [Gnoke Manifest](https://edmundsparrow.github.io/Gnoke-Manifest) | Passenger booking and trip management for road transport operators |
-| [Gnoke Petroleum](https://edmundsparrow.github.io/gnoke-petroleum) | Daily fuel sales tracking — PMS, AGO, Kerosene, LPG |
-| [Gnoke Gas](https://edmundsparrow.github.io/gnoke-gasap) | Gas sales tracking and inventory records |
-| [Gnoke Library](https://edmundsparrow.github.io/gnoke-library) | Book catalogue, loan tracking and returns |
-| [Gnoke College](https://edmundsparrow.github.io/gnoke-college) | School management — students, staff, and results |
-| [Gnoke Tailors](https://edmundsparrow.github.io/gnoke-tailors) | Orders, deadlines and customer records for tailors |
-| [Gnoke Courier](https://github.com/edmundsparrow/gnoke-courier) | Parcel logging and tracking for logistics teams |
-| [Gnoke Reader](https://edmundsparrow.github.io/gnoke-reader) | Universal offline file viewer — PDF, DOCX, CSV, JSON, logs and more |
-| [Gnoke Player](https://edmundsparrow.github.io/gnoke-player) | High-performance local media player with professional-grade controls |
-| [Gnoke ZIP](https://edmundsparrow.github.io/gnoke-zip) | Create and extract ZIP, RAR, 7Z and ISO files in the browser |
-| [Gnoke FlatJSON](https://edmundsparrow.github.io/gnoke-flatjson) | Normalize any JSON shape into { headers, rows } — zero dependencies |
-| [Gnoke DataForge](https://edmundsparrow.github.io/gnoke-dataforge) | Relational schema modeler — export to SQLite, SQL, JSON, CSV |
-| [Gnoke SignalTower](https://edmundsparrow.github.io/gnoke-signaltower) | Industrial Andon stack light controller for shop floors |
-| [Gnoke Irrigation](https://edmundsparrow.github.io/gnoke-irrigation-hmi) | Irrigation zone scheduling and monitoring for farmers |
-| [Gnoke Logbook](https://edmundsparrow.github.io/gnoke-logbook) | Daily task logger with automated weekly report exports |
-| [Gnoke Organizer](https://edmundsparrow.github.io/gnoke-organizer) | Task management with priorities, scheduling and filters |
-| [Shopping Trip](https://edmundsparrow.github.io/gnoke-market-woman-list) | Smart offline shopping list with budget tracking and price estimation |
-| [Gnoke Receipts](https://edmundsparrow.github.io/gnoke-receipts) | Receipt and invoicing management |
-| [Gnoke GeoCompass](https://edmundsparrow.github.io/gnoke-geocompass) | GPS compass with real-time bearing, distance and city search |
-| [Gnoke Bible](https://edmundsparrow.github.io/gnoke-bible) | Lightweight, offline-first Holy Bible (KJV) reader |
-| [Gnoke TimeTravel](https://github.com/edmundsparrow/gnoke-timetravel) | Browser-based "Cosmic Return Date" calculator and karma engine |
+| [Gnoke Database](https://github.com/edmundsparrow/gnoke-database) | Self-hosted Firebase alternative. SQLite + PHP. Zero dependencies. |
+| [Gnoke Station](https://github.com/edmundsparrow/gnokestation) | Ultra-lightweight web desktop environment |
+| [Gnoke Gasap](https://github.com/edmundsparrow/gnoke-gasap) | Gas sales tracking, inventory, and daily record management |
+| [Gnoke Manifest](https://github.com/edmundsparrow/Gnoke-Manifest) | Offline-first passenger booking and manifest management for road transport |
+| [Gnoke OBD2](https://github.com/edmundsparrow/Gnoke-OBD2) | Professional OBD-II vehicle diagnostic platform |
 
-More apps in progress. 
+All tools are built to run without a vendor. No lock-in. No subscription. Just a browser and a host you own.
 
 ---
 
 ## Stack
 
-HTML · CSS · Vanilla JavaScript · SQLite (sql.js / WASM) · IndexedDB · PWA Service Workers
+```
+HTML · CSS · Vanilla JavaScript · SQL.js · SQLite · PHP · Progressive Web Apps (PWA)
+```
 
-No frameworks. No build steps. No cloud dependencies.
-
----
-
-## Philosophy
-
-Most software assumes reliable internet, modern hardware and a paid subscription.
-A lot of people do not have all three.
-
-The Gnoke Suite is built to work on a low-spec Android phone with patchy data,
-in a fuel station, a tailor shop, a school or a transport yard —
-and still do the job properly.
+No build step. No bundler required. Readable by anyone with a text editor.
 
 ---
 
 ## Hire Me
 
-Available for freelance and contract work:
+Available for freelance and contract work — especially:
 
-- Offline-first PWA development
-- Lightweight HMI and admin tools
-- Custom business software (schools, logistics, retail, agriculture)
-- Browser-based hardware interfaces (WebUSB, Web Serial, Bluetooth)
+- Lightweight web app development (PWA, offline-first)
+- Database + web integration
+- Custom administrative and operational tooling
 
-📧 [ekongmikpe@gmail.com](mailto:ekongmikpe@gmail.com)
-💬 [WhatsApp](https://wa.me/09024054758)
-🔗 [LinkedIn](https://linkedin.com/in/edmundsparrow)
-🌐 [edmundsparrow.github.io/edmundsparrow](https://edmundsparrow.github.io/edmundsparrow)
+📧 [ekongmikpe@gmail.com](mailto:ekongmikpe@gmail.com)  
+💼 [LinkedIn](https://linkedin.com/in/edmundsparrow)  
+💬 [WhatsApp](https://wa.me/09024054758)  
+🌐 [edmundsparrow.netlify.app](https://edmundsparrow.netlify.app)
 
 ---
 
-## Support
+## Support the Work
 
-If any of these tools are useful to you:
-[selar.com/showlove/edmundsparrow](https://selar.com/showlove/edmundsparrow)
+If these tools are useful to you — in any form, for any reason —  
+you can support continued development here:
 
-© 2026 Edmund Sparrow
+[→ Show Love on Selar](https://selar.com/showlove/edmundsparrow)
+
+Your support keeps these tools free for builders who need them most.
