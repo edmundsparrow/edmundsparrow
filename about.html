@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Gnoke CMS</title>
+    <link rel="icon" type="image/svg+xml" href="assets/gnoke-mark.svg">
+    <meta name="description" content="Edmund Sparrow — offline-first web developer building the Gnoke ecosystem.">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo-header">
+                <a href="index.html">
+                    <img src="assets/gnoke-mark.svg" alt="Gnoke CMS logo" width="48" height="48">
+                </a>
+                <span>Gnoke CMS</span>
+            </div>
+            <h1 class="site-title">About the Builder</h1>
+            <p class="site-subtitle">Offline-first, framework-free, and sovereign by design.</p>
+        </div>
+    </header>
+
+    <nav class="site-nav">
+        <div class="container nav-content">
+            <ul class="nav-links">
+                <li><a href="index.html">All Posts</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+            <a href="https://github.com/edmundsparrow" target="_blank" rel="noopener" style="color:#64748b; text-decoration:none; font-size:0.9rem;">GitHub →</a>
+        </div>
+    </nav>
+
+    <main class="post-body">
+        <div class="container-narrow">
+
+            <div class="post-content" style="margin-bottom: 40px;">
+                <h2>Hi, I'm Edmund Sparrow.</h2>
+                <p>I'm a solo developer based in Nigeria, building the Gnoke ecosystem — an offline-first stack of vanilla JavaScript, PHP, and SQLite. No frameworks, no build steps, no dependency on the cloud staying up.</p>
+                <p>I call myself a "vibe engineer" — I architect from first principles rather than a formal CS background, and I build the entire ecosystem from an Android phone. Everything here, including this CMS, is proof that lightweight tooling can still be capable tooling.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Stack</h3>
+                    <ul class="stack-list">
+                        <li>HTML5 &amp; CSS3</li>
+                        <li>Vanilla JavaScript</li>
+                        <li>PHP (zero-dependency backends)</li>
+                        <li>SQLite</li>
+                        <li>No frameworks, no build tools</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>What I Build</h3>
+                    <ul class="stack-list">
+                        <li>Gnoke ecosystem — offline-first tools</li>
+                        <li>Lightweight, framework-free web apps</li>
+                        <li>Client sites & internal tooling</li>
+                        <li>Database-backed systems without the bloat</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="post-content" style="margin-top: 40px; text-align: center; padding: 32px; background: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0;">
+                <h2 style="margin-top:0; margin-bottom: 16px;">Let's Build</h2>
+                <p style="margin-bottom: 24px; color: #64748b;">Available for freelance and contract work. Reach out and let's talk about your project.</p>
+                <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+                    <a href="https://dev.to/edmundsparrow" target="_blank" rel="noopener" class="contact-btn">dev.to</a>
+                    <a href="https://github.com/edmundsparrow" target="_blank" rel="noopener" class="contact-btn">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Edmund Sparrow</p>
+            <p class="footer-tagline">Built as a lightweight, offline-first, sovereign web.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

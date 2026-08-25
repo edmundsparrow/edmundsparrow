@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Article — Gnoke CMS</title>
+    <link rel="icon" type="image/svg+xml" href="assets/gnoke-mark.svg">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <span id="breadcrumbTitle">Article</span>
+        </nav>
+    </div>
+
+    <div id="articleRoot">
+        <p class="state-message" style="padding:60px 0;">Loading article…</p>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Gnoke CMS</p>
+        </div>
+    </footer>
+
+    <script src="js/db.js"></script>
+    <script src="js/devto-sync.js"></script>
+    <script src="js/markdown.js"></script>
+    <script src="js/article.js"></script>
+</body>
+</html>
